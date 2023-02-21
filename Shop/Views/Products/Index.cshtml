@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Shop.Models.TblProduct>
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Products</h1>
+
+<p>
+    <a class="btn btn-primary float-right" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.ProductPrice)
+            </th>
+           
+          
+            <th>
+                @Html.DisplayNameFor(model => model.IsFeatured)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductPrice)
+            </td>
+           
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.IsFeatured)
+            </td>
+            <td>
+                <img src="~/uploads/@item.Image" height="30px" width="30px" alt="Alternate Text" />
+            </td>
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProductId"><i class="fa fa-pencil"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.ProductId"><i class="fa fa-info"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.ProductId"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

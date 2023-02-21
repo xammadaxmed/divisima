@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- ================== GOOGLE FONTS ==================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+    <!-- ======================= GLOBAL VENDOR STYLES ========================-->
+    <link rel="stylesheet" href="~/assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/vendor/metismenu/dist/metisMenu.css">
+    <link rel="stylesheet" href="~/assets/vendor/switchery-npm/index.css">
+    <link rel="stylesheet" href="~/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <!-- ======================= LINE AWESOME ICONS ===========================-->
+    <link rel="stylesheet" href="~/assets/css/icons/line-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/css/icons/simple-line-icons.css">
+    <!-- ======================= DRIP ICONS ===================================-->
+    <link rel="stylesheet" href="~/assets/css/icons/dripicons.min.css">
+    <!-- ======================= MATERIAL DESIGN ICONIC FONTS =================-->
+    <link rel="stylesheet" href="~/assets/css/icons/material-design-iconic-font.min.css">
+    <!-- ======================= PAGE VENDOR STYLES ===========================-->
+    <link rel="stylesheet" href="~/assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.css">
+    <!-- ======================= GLOBAL COMMON STYLES ============================-->
+    <link rel="stylesheet" href="~/assets/css/common/main.bundle.css">
+    <!-- ======================= LAYOUT TYPE ===========================-->
+    <link rel="stylesheet" href="~/assets/css/layouts/vertical/core/main.css">
+    <!-- ======================= MENU TYPE ===========================-->
+    <link rel="stylesheet" href="~/assets/css/layouts/vertical/menu-type/default.css">
+    <!-- ======================= THEME COLOR STYLES ===========================-->
+    <link rel="stylesheet" href="~/assets/css/layouts/vertical/themes/theme-j.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- START APP WRAPPER -->
+    <div id="app">
+        <!-- START MENU SIDEBAR WRAPPER -->
+        <aside class="sidebar sidebar-left">
+            <div class="sidebar-content">
+                <div class="aside-toolbar">
+                    <ul class="site-logo">
+                        <li>
+                            <!-- START LOGO -->
+                            <a href="index.html">
+                                <div class="logo">
+                                   
+                                </div>
+                                <span class="brand-text">QuantumPro</span>
+                            </a>
+                            <!-- END LOGO -->
+                        </li>
+                    </ul>
+                   
+                </div>
+                <nav class="main-menu">
+                    <ul class="nav metismenu">
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-home"></i><span>Dashboard</span></a>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-edit"></i><span>Categories</span></a>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-home"></i><span>Products</span></a>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-shopping-bag"></i><span>Orders</span></a>
+                        </li>
+
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-users"></i><span>Customers</span></a>
+                        </li>
+
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-comments"></i><span>Reviews</span></a>
+                        </li>
+
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-users"></i><span>Users</span></a>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-user"></i><span>Profile</span></a>
+                        </li>
+
+                        <li class="nav-dropdown">
+                            <a href="#" aria-expanded="false"><i class="fa fa-power-off"></i><span>Logout</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR WRAPPER -->
+        <div class="content-wrapper">
+            <!-- START LOGO WRAPPER -->
+            <nav class="top-toolbar navbar navbar-mobile navbar-tablet">
+                <ul class="navbar-nav nav-left">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" data-toggle-state="aside-left-open">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-center site-logo">
+                    <li>
+                        <a href="index.html">
+                            <div class="logo_mobile">
+                              
+                            </div>
+                            <span class="brand-text">QuantumPro</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-right">
+                   
+                </ul>
+            </nav>
+            <!-- END LOGO WRAPPER -->
+            <!-- START TOP TOOLBAR WRAPPER -->
+            <nav class="top-toolbar navbar navbar-desktop flex-nowrap">
+              
+            </nav>
+            <!-- END TOP TOOLBAR WRAPPER -->
+            <div class="content" style="padding:20px;">
+                @RenderBody()
+            </div>
+        </div>
+      
+    </div>
+    <!-- END CONTENT WRAPPER -->
+    <!-- ================== GLOBAL VENDOR SCRIPTS ==================-->
+    <script src="~/assets/vendor/modernizr/modernizr.custom.js"></script>
+    <script src="~/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="~/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/js-storage/js.storage.js"></script>
+    <script src="~/assets/vendor/js-cookie/src/js.cookie.js"></script>
+    <script src="~/assets/vendor/pace/pace.js"></script>
+    <script src="~/assets/vendor/metismenu/dist/metisMenu.js"></script>
+    <script src="~/assets/vendor/switchery-npm/index.js"></script>
+    <script src="~/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- ================== PAGE LEVEL VENDOR SCRIPTS ==================-->
+    <script src="~/assets/vendor/countup.js/dist/countUp.min.js"></script>
+    <script src="~/assets/vendor/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="~/assets/vendor/flot/jquery.flot.js"></script>
+    <script src="~/assets/vendor/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="~/assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="~/assets/vendor/flot/jquery.flot.time.js"></script>
+    <script src="~/assets/vendor/flot.curvedlines/curvedLines.js"></script>
+    <script src="~/assets/vendor/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="~/assets/vendor/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+    <!-- ================== GLOBAL APP SCRIPTS ==================-->
+    <script src="~/assets/js/global/app.js"></script>
+    <!-- ================== PAGE LEVEL SCRIPTS ==================-->
+    <script src="~/assets/js/components/countUp-init.js"></script>
+    <script src="~/assets/js/cards/counter-group.js"></script>
+    <script src="~/assets/js/cards/recent-transactions.js"></script>
+    <script src="~/assets/js/cards/monthly-budget.js"></script>
+    <script src="~/assets/js/cards/users-chart.js"></script>
+    <script src="~/assets/js/cards/bounce-rate-chart.js"></script>
+    <script src="~/assets/js/cards/session-duration-chart.js"></script>
+
+</body>
+
+</html>

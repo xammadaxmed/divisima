@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Shop.Models.TblCategory>
+
+@{
+    ViewData["Title"] = "Categories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Categories</h1>
+
+<p>
+    <a class="btn btn-primary float-right" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                <img src="~/uploads/@item.Image" height="30px" width="30px" />
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CategoryId"><i class="fa fa-pencil"></i></a> |
+               
+                <a asp-action="Delete" asp-route-id="@item.CategoryId"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
